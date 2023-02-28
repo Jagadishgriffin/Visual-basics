@@ -1,0 +1,27 @@
+Private Sub Command1_Click()
+If Option1.Value = True Then
+   Text3.Text = Val(Text1.Text) * Val(Text2.Text)
+  MsgBox "Your ticket is confirmed with Rs." + Text3.Text, 1, "Ticket"
+ ElseIf Option2.Value = True Then
+   Text3.Text = Val(Text1.Text) * Val(Text2.Text)
+  MsgBox "Your ticket is confirmed with Rs." + Text3.Text, 1, "Ticket"
+ ElseIf Option3.Value = True Then
+   Text3.Text = Val(Text1.Text) * Val(Text2.Text)
+  MsgBox "Your ticket is confirmed with Rs." + Text3.Text, 1, "Ticket"
+  ElseIf Option4.Value = True Then
+   Text3.Text = Val(Text1.Text) * Val(Text2.Text)
+  MsgBox "Your ticket is confirmed with Rs." + Text3.Text, 1, "Ticket"
+      End If
+End Sub
+Private Sub Option1_Click()
+Text1.Text = 700
+End Sub
+Private Sub Option2_Click()
+Text1.Text = 750
+End Sub
+Private Sub Option3_Click()
+Text1.Text = 650
+End Sub
+Private Sub Option4_Click()
+Text1.Text = 500
+End Sub
