@@ -1,0 +1,10 @@
+Private Sub Command1_Click()
+Dim n As Integer, i As Integer
+Dim f As Double
+f = 1
+n = Val(Text1.Text)
+For i = 1 To n
+    f = f * i
+Next i
+   Text2.Text = f
+End Sub
