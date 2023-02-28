@@ -1,0 +1,12 @@
+5.Design a small Alarm Clock Application. 
+Private Sub Command1_Click()
+Timer1.Enabled = True
+End Sub
+Private Sub Timer1_Timer()
+Label2.Caption = Time
+If Val(Text1.Text) = Hour(Label2.Caption) And Val(Text2.Text) = Minute(Label2.Caption) Then
+Print " Alarm On"
+Else
+   Exit Sub
+End If
+End Sub
