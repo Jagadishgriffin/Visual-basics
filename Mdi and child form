@@ -1,0 +1,22 @@
+Private Sub Command1_Click()                                                 Private Sub regular_Click()
+             CommonDialog1.ShowColor  					Text1.FontBold = False
+            Text1.ForeColor = CommonDialog1.Color  			Text1.FontItalic = False
+End Sub  							 End Sub
+Private Sub Command2_Click()             
+CommonDialog1.ShowColor
+Text1.BackColor = CommonDialog1.Color
+End Sub
+Private Sub font_Click()
+CommonDialog1.ShowFont
+Text1.FontName = CommonDialog1.FontName
+Text1.FontSize = CommonDialog1.FontSize
+End Sub
+Private Sub italic_Click()
+Text1.FontItalic = True
+End Sub
+Private Sub new_Click()
+Form1.Show
+End Sub
+Private Sub open_Click()
+CommonDialog1.ShowOpen
+End Sub
