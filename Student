@@ -1,0 +1,47 @@
+Private Sub Command1_Click()
+Dim a As Integer
+Text6.Text = Val(Text3.Text) + Val(Text4.Text) + Val(Text5.Text)
+Text7.Text = Val(Text6.Text) / 3
+a = Val(Text7.Text)
+If a > 75 Then
+     Text8.Text = "Distinction"
+ElseIf a > 60 Then
+    Text8.Text = "First Class"
+ElseIf a > 50 Then
+    Text8.Text = "Second class"
+ElseIf a > 40 Then
+    Text8.Text = "Pass class"
+Else
+   Text8.Text = "Fail"
+End If
+If Val(Text3.Text) < 35 Then
+   Text8.Text = "Fail"
+End If
+If Val(Text4.Text) < 35 Then
+   Text8.Text = "Fail"
+End If
+If Val(Text5.Text) < 35 Then
+   Text8.Text = "Fail"
+End If
+End Sub
+Private Sub Text3_KeyPress(KeyAscii As Integer)
+If KeyAscii < 48 Or KeyAscii > 57 Then
+    KeyAscii = 0
+    MsgBox "Enter number only"
+End If
+End Sub
+Private Sub Text4_KeyPress(KeyAscii As Integer)
+If KeyAscii < 48 Or KeyAscii > 57 Then
+    KeyAscii = 0
+    MsgBox "Enter number only"
+End If
+End Sub
+Private Sub Text5_KeyPress(KeyAscii As Integer)
+If KeyAscii < 48 Or KeyAscii > 57 Then
+    KeyAscii = 0
+    MsgBox "Enter number only"
+End If
+End Sub
+Private Sub Command2_Click()
+End
+End Sub
