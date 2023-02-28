@@ -1,0 +1,11 @@
+Private Sub Dir1_Change()
+File1.Path = Dir1.Path
+End Sub
+Private Sub Drive1_Change()
+Dir1.Path = Drive1.Drive
+End Sub
+Private Sub File1_Click()
+Dim a As String
+a = Dir1.Path & "\" & File1.FileName
+Image1.Picture = LoadPicture(a)
+End Sub
