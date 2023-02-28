@@ -1,0 +1,11 @@
+Private Sub HScroll1_Change()
+Text1.BackColor = RGB(HScroll1.Value, HScroll2.Value, HScroll3.Value)
+End Sub
+
+Private Sub HScroll2_Change()
+Text1.BackColor = RGB(HScroll1.Value, HScroll2.Value, HScroll3.Value)
+End Sub
+
+Private Sub HScroll3_Change()
+Text1.BackColor = RGB(HScroll1.Value, HScroll2.Value, HScroll3.Value)
+End Sub
