@@ -1,0 +1,15 @@
+Private Sub Command1_Click()
+Dim f1 As Integer, f2 As Integer, f3 As Integer
+Dim i As Integer
+f1 = 0
+f2 = 1
+Print "fibonacci series.."
+Print f1
+Print f2
+For i = 3 To Val(Text1.Text)
+f3 = f1 + f2
+Print f3
+f1 = f2
+f2 = f3
+Next i
+End Sub
