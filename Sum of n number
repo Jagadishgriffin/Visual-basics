@@ -1,0 +1,9 @@
+Write a VB program to find sum of N numbers.
+Private Sub Command1_Click()
+      Dim s As Integer, i As Integer
+      s = 0
+      For i = 1 To Val(Text1.Text)
+           s = i + s
+      Next i
+      Text2.Text = s
+   End Sub
