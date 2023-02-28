@@ -1,0 +1,21 @@
+Private Sub Command1_Click()
+bs = Val(Text4.Text)
+  Select Case bs
+    Case Is >= 50000
+        da = bs * 20 / 100
+        hra = bs * 10 / 100
+        pf = bs * 12 / 100
+    Case Is >= 25000
+      da = bs * 15 / 100
+        hra = bs * 8 / 100
+        pf = bs * 10 / 100
+    Case Else
+        da = bs * 10 / 100
+        hra = bs * 5 / 100
+        pf = bs * 8 / 100
+    End Select
+    Text5.Text = da
+    Text6.Text = hra
+    Text7.Text = pf
+    Text8.Text = bs + da + hra - pf
+End Sub
